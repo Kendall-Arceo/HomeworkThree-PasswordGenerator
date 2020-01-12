@@ -3,6 +3,16 @@
 
 }
 
+.jumbotron {
+    background-color: antiquewhite;
+
+}
+
 h1 {
     text-align: center;
+}
+
+button {
+    background-color: red;
+
 }
