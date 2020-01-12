@@ -1,18 +1,21 @@
 .container {
     margin-top: 50px;
-
-}
-
-.jumbotron {
+    margin-bottom: 50px;
     background-color: antiquewhite;
+    padding: 20px;
+    width: 100%;
 
 }
 
-h1 {
-    text-align: center;
-}
-
-button {
-    background-color: red;
+#display {
+    width: 100%;
 
 }
+
+#slider {
+    width:100%;
+    
+
+}
+
+
