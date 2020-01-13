@@ -1,24 +1,26 @@
-// variables to input:
-// var inputlength
-// var Include Symbols:( e.g. @#$% )
-// Include Numbers:( e.g. 123456 )
-// Include Lowercase Characters:( e.g. abcdefgh )
-// Include Uppercase Characters:( e.g. ABCDEFGH )
-// Exclude Similar Characters:( e.g. i, l, 1, L, o, 0, O )
-// Exclude Ambiguous Characters:( { } [ ] ( ) / \ ' " ` ~ , ; : . < > )
-// In reference to : https://passwordsgenerator.net/
+//generate random passoword java
 
-var lowerCase = ("a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z")
-var upperCase = ("A","B","C","D")
-var numbers = ()
+function generate() {
 
- function generatePassword() {
-    var length = 8,
-        charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
-        retVal = "";
-    for (var i = 0, n = charset.length; i < length; ++i) {
-        retVal += charset.charAt(Math.floor(Math.random() * n));
+    //setting password length/ complexity
+    let complexity = document.getElementById("slider").nodeValue;
+
+    // some possible password values
+    let values = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopgrstuvwxyz1234567890!@#$%^&*()_+"
+
+    let password = ""
+
+    //create loop for password
+    for(var i = 0; i <= complexity; i++) {
+        password = password + values.charAt(Math.floor(Math.random() * Math.floor(values.length - 1)));
+
     }
-    return retVal;
+
+    //password to display/textbox area
+    document.getElementById("display").value = password;
+
+    //adding password to previously generated passwords section
+    document.getElementById("last_passwords").innerHTML += password + "<br />";
+
 }
 
