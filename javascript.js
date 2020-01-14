@@ -24,18 +24,31 @@ function generate() {
 
 }
 
-// set dewfault length display of 25
-document.getElementById("length").innerHTML = "length: 25";
+// set default length display of 25
+document.getElementById("Length").innerHTML = "Length: 25";
 
 //function to set length for the slider
 document.getElementById("slider").oninput = function () {
 
     if(document.getElementById("slider").value > 0) {
-        document.getElementById("length").innerHTML = "length: " + document.getElementById("slider").value;
+        document.getElementById("Length").innerHTML = "Length: " + document.getElementById("slider").value;
         
     }
     else {
-        document.getElementById("length").innerHTML = "length = 1";
+        document.getElementById("Length").innerHTML = "Length = 1";
     }
 
 }
+
+// function for the copy to clipboard
+function copyPassword() {
+
+    document.getElementById("display").select();
+
+    document.execCommand("Copy");
+
+    alert("Password copied to clipboard!");
+
+
+}
+

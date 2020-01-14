@@ -11,12 +11,8 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-dark bg-dark">
         <a class="navbar-brand">Random Password Generator</a>
-        <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
     </nav>
 
 
@@ -30,11 +26,38 @@
                     <br />
                     <input type="range" min="0" max="50" name="slider" id="slider">
                     <br />
+
+                    <div id="Length"></div>
+
+                    <br />
+
+                    <div class="setting">
+                        <label>Include uppercase letters</label>
+                        <input type="checkbox" id="uppercase" checked />
+                    </div>
+
+                    <div class="setting">
+                        <label>Include lowercase letters</label>
+                        <input type="checkbox" id="lowercase" checked />
+                    </div>
+
+                    <div class="setting">
+                        <label>Include numbers</label>
+                        <input type="checkbox" id="numbers" checked />
+                    </div>
+
+                    <div class="setting">
+                        <label>Include symbols</label>
+                        <input type="checkbox" id="symbols" checked />
+                    </div>
+
+                    <br />
                     <button onclick="generate()">Generate</button>
-                    <button onclick="">Copy to Clipboard</button>
-                    <div id="length"></div>
+                    <button onclick="copyPassword()">Copy to Clipboard</button>
 
                 </div>
+
+                
 
                 <div class="previous_passwords">
                     <b>Previously Generated Passwords</b>
