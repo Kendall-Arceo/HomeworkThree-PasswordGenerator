@@ -28,3 +28,14 @@ function generate() {
 document.getElementById("length").innerHTML = "length: 25";
 
 //function to set length for the slider
+document.getElementById("slider").oninput = function () {
+
+    if(document.getElementById("slider").value > 0) {
+        document.getElementById("length").innerHTML = "length: " + document.getElementById("slider").value;
+        
+    }
+    else {
+        document.getElementById("length").innerHTML = "length = 1";
+    }
+
+}
