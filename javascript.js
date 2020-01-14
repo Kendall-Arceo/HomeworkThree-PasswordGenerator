@@ -3,12 +3,12 @@
 function generate() {
 
     //setting password length/ complexity
-    let complexity = document.getElementById("slider").nodeValue;
+    let complexity = document.getElementById("slider").value;
 
     // some possible password values
-    let values = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopgrstuvwxyz1234567890!@#$%^&*()_+"
+    let values = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()_+";
 
-    let password = ""
+    let password = "";
 
     //create loop for password
     for(var i = 0; i <= complexity; i++) {
@@ -24,3 +24,7 @@ function generate() {
 
 }
 
+// set dewfault length display of 25
+document.getElementById("length").innerHTML = "length: 25";
+
+//function to set length for the slider
