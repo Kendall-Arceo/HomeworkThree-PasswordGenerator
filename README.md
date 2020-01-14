@@ -5,8 +5,9 @@ Your application's GitHub repository should contain a README.md file explaining 
 # Functionality of the coode:
 This Password generator is designed to create random passwords with an option of the character length. 
 
-The length is designated by the user with a cap of 50 characters. The user can then copy to their device clipboard to paste onto whichever application needed the password. For the user's convenience, a history of the passwords generated beforehand is listed on the bottom. 
+The length is designated by the user with a cap of 128 characters. The user can then copy to their device clipboard to paste onto whichever application needed the password. For the user's convenience, a history of the passwords generated beforehand is listed on the bottom. 
 
 # Screenshot of deployed website:
 
-![Completed Application](images/screenshot_workingpassword.PNG?raw=true "Deployed Password Generator")
+![Completed Application](images/screenshot_workingpassword.PNG?raw=true  "Deployed Password Generator"){:height="50%" width="50%"}
+
