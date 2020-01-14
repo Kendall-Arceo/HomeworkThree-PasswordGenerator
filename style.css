@@ -27,4 +27,5 @@
 
 .previous_passwords {
     margin-bottom: 30px;
+    word-wrap: break-word;
 }

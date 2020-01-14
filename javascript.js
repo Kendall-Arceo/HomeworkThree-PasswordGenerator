@@ -25,7 +25,7 @@ function generate() {
 }
 
 // set default length display of 25
-document.getElementById("Length").innerHTML = "Length: 25";
+document.getElementById("Length").innerHTML = "Length: 68";
 
 //function to set length for the slider
 document.getElementById("slider").oninput = function () {
